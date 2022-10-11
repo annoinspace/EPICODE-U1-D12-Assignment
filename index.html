@@ -83,7 +83,9 @@ const addClassToTitle = function () {
 */
 
 const changePcontent = function () {
-  //
+  const childP = document.querySelectorAll("div" > "p")
+  childP.changePcontent = "changed"
+  
 }
 
 /* EXERCISE 4
@@ -91,7 +93,8 @@ const changePcontent = function () {
 */
 
 const changeUrls = function () {
-  //
+  document.querySelector("a").href='https://www.google.com'
+  document.querySelector("a").innerText = 'This goes to google'
 }
 
 /* EXERCISE 5
