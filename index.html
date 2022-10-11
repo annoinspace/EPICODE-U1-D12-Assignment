@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div>
+  <div id="firstDiv">
     <h1>This is the title of the page</h1>
     <h2>This is the subtitle of the page</h2>
   </div>
@@ -112,7 +112,9 @@ const addToTheSecond = function (content) {
 */
 
 const addParagraph = function (content) {
-  //
+  let node = document.createElement('p')
+  node.appendChild(document.createElement('p')).innerText = 'this is the new paragraph'
+  document.getElementById('firstDiv').appendChild(node)
 }
 
 /* EXERCISE 7
