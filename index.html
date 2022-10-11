@@ -98,11 +98,13 @@ const changeUrls = function () {
 }
 
 /* EXERCISE 5
- Write a function for adding a new list item in the second unordered list.
+ Write a function for adding a new list item in the second unordered list.   <ul id="secondList">
 */
 
 const addToTheSecond = function (content) {
-  //
+  let node = document.createElement('li')
+  node.appendChild(document.createElement('li')).innerText = '4th'
+  document.getElementById("secondList").appendChild(node)
 }
 
 /* EXERCISE 6
@@ -151,6 +153,9 @@ const changeFooterText = function () {
 
 const inputField = document.getElementById("input-field")
 // ...
+
+/* EXERCISE 12 
+  Create a welcome alert message when the page successfully loads */
 
 window.onload = function () {
   //
