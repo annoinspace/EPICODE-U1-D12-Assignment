@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
-<body>
+<body onload='window.onload()'>
   
 </body>
 </html>
@@ -52,7 +52,7 @@
     </div>
   </div>
 
-  <div>
+  <div id="footer">
     <p>And this text is just for the exercise too!</p>
     <h2 style="color: red">
       Save this page on your computer and open it with VSCode to get the
@@ -163,7 +163,7 @@ colourChangeArea.addEventListener('click', colorChange)
 */
 
 const changeFooterText = function () {
-  //
+  document.getElementById('footer').innerHTML = 'changed!'
 }
 
 /* EXERCISE 11
@@ -177,7 +177,7 @@ const inputField = document.getElementById("input-field")
   Create a welcome alert message when the page successfully loads */
 
 window.onload = function () {
-  //
+ alert("Hello World!");
 }
 
 /* EXERCISE 13
