@@ -139,7 +139,23 @@ const paintItGreen = function () {
 */
 
 const makeItClickable = function () {
-  //
+  let colourChangeArea = document.getElementById('firstDiv')
+
+// generate random colour
+
+  function colorValue() {
+  return Math.floor(Math.random() * 256);
+}
+
+function colorChange(event){
+let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
+event.target.style.backgroundColor = randomColor
+}
+
+// add event listener to the colourChangeArea
+
+colourChangeArea.addEventListener('click', colorChange)
+
 }
 
 /* EXERCISE 10
